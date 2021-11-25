@@ -1,0 +1,37 @@
+{
+    "name": "miguel/master",
+    "description": "framework master version 1.0",
+    "license": "MIT",
+    "require" : {
+        "phpmailer/phpmailer" : "^6.5",
+        "filp/whoops": "^2.14"
+    },
+    "autoload": {
+        "files": [
+            "App/Config/App.php",
+            "App/Config/Database.php",
+            "App/Config/Router.php",
+
+
+            "System/Bootstrap/Bootstrap.php",
+        
+            "System/Helpers/Functions.php",
+            "System/Helpers/Hash.php"
+        ],
+        "psr-4": {
+            "App\\": "App/",
+            "Master\\": "System/" 
+        }
+    },
+    "authors": [
+        {
+            "name": "Miguel-Leite",
+            "email": "miguelleite200leite@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "config":{
+        "vendor-dir": "System/vendor"
+    },
+    "minimum-stability": "beta"
+}
